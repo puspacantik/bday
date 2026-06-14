@@ -1,0 +1,545 @@
+/* CSS START */
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media only screen and (max-width: 540px) {
+  #main {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* CSS START */
+  /*--------------------------
+		HERO
+	--------------------------*/
+
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hero.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #hero .efek-ft {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    left: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  }
+
+  #hero .efek-ft-b {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    left: 0px;
+    top: 50vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(7, 11, 7, 0.4));
+    z-index: 0;
+  }
+
+  #hero .judul {
+    position: relative;
+    z-index: 10;
+  }
+  #hero h1 {
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    padding-top: 7.5vh;
+    font-size: 25px;
+    font-weight: 1000;
+    color: #fff;
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+  }
+  #hero h2 {
+    font-family: "Birthstone Bounce", cursive;
+    font-weight: 500;
+    padding-top: 5px;
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+  }
+  #hero p1 {
+    color: #fff;
+    padding-top: 70vh;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 1);
+    z-index: 10;
+  }
+
+  #selamat {
+    background-color: #e2eedb;
+    height: 100vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding-top: 65%;
+  }
+
+  #selamat h1 {
+    font-family: "Birthstone Bounce", cursive;
+    font-weight: 500;
+    font-size: 32px;
+    color: rgba(23, 0, 2, 1);
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+  }
+  #selamat p {
+    color: rgba(23, 0, 2, 1);
+    padding-top: 4vh;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 1);
+  }
+
+  #doa {
+    background-color: #c1e9d9;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    height: 100vh;
+    padding-top: 50vw;
+  }
+
+  #doa h1 {
+    font-family: "Birthstone Bounce", cursive;
+    font-weight: 500;
+    font-size: 32px;
+    color: rgba(23, 0, 2, 1);
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+  }
+
+  #doa p {
+    color: rgba(23, 0, 2, 1);
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 4vh;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  #maaf {
+    background-color: #abd7dd;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    height: 100vh;
+    padding-top: 50%;
+  }
+
+  #maaf h1 {
+    font-family: "Birthstone Bounce", cursive;
+    font-weight: 500;
+    font-size: 32px;
+    color: rgba(23, 0, 2, 1);
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+  }
+
+  #maaf p {
+    color: rgba(23, 0, 2, 1);
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 4vh;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  #sma {
+    background-color: #fbc1ce;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding-top: 50%;
+    height: 100vh;
+  }
+
+  #sma h1 {
+    font-family: "Birthstone Bounce", cursive;
+    font-weight: 500;
+    font-size: 32px;
+    padding-bottom: 3vh;
+    color: rgba(23, 0, 2, 1);
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+  }
+
+  .fotosma img {
+    width: 40vh;
+    height: 30vh;
+    border-radius: 1rem;
+    object-fit: cover;
+    border: 0.5vh solid;
+    border-color: #356b55;
+  }
+
+  #sma p {
+    color: rgba(23, 0, 2, 1);
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 3vh;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  #ucapan {
+    background-color: #ffdae1;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    height: 100vh;
+    padding-top: 50vw;
+  }
+
+  #ucapan h1 {
+    font-family: "Birthstone Bounce", cursive;
+    font-weight: 500;
+    font-size: 32px;
+    color: rgba(23, 0, 2, 1);
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+  }
+
+  #ucapan p {
+    color: rgba(23, 0, 2, 1);
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 4vh;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  /*--------------------------
+							GALERI
+					--------------------------*/
+
+  #galeri {
+    height: 100vh;
+    background-color: #fef1f0;
+    padding-top: 75px;
+  }
+
+  #galeri h1 {
+    font-family: "Birthstone Bounce", cursive;
+    font-weight: 500;
+    font-size: 32px;
+    padding-bottom: 3vh;
+    color: rgba(23, 0, 2, 1);
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+  }
+
+  #galeri .album-slider {
+    height: 80%;
+    position: relative;
+  }
+
+  .album-slide {
+    width: 30vh;
+    height: 40vh;
+    position: relative;
+  }
+
+  .album-slide .album-slide-img img {
+    width: 30vh;
+    height: 40vh;
+    border-radius: 2rem;
+    object-fit: cover;
+    border: 0.75vh solid;
+    border-color: #d795a3;
+  }
+
+  .slider-arrow {
+    color: #fefde9;
+  }
+
+  #galeri p {
+    color: rgba(23, 0, 2, 1);
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 4vh;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  .authorr {
+    height: 75px;
+    background-color: #a3b0c3;
+  }
+
+  .ig {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .spesial {
+    font-size: 5px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  #main {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* CSS START */
+  /*--------------------------
+		HERO
+	--------------------------*/
+
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hero-desk.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #hero .efek-ft {
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    left: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+  }
+
+  #hero .efek-ft-b {
+    position: absolute;
+    width: 100%;
+    height: 35vh;
+    left: 0px;
+    top: 65vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(7, 11, 7, 0.4));
+    z-index: 0;
+  }
+
+  #hero .judul {
+    position: relative;
+    z-index: 10;
+  }
+  #hero h1 {
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    padding-top: 7.5vh;
+    font-size: 2.5vw;
+    font-weight: 1000;
+    color: #fff;
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+  }
+  #hero h2 {
+    font-family: "Birthstone Bounce", cursive;
+    font-weight: 500;
+    padding-top: 5px;
+    font-size: 3vw;
+    color: #fff;
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+  }
+  #hero p1 {
+    color: #fff;
+    padding-top: 65vh;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 1);
+    z-index: 10;
+  }
+
+  /*--------------------------
+							GALERI
+					--------------------------*/
+
+  #galeri {
+    height: 100vh;
+    background-color: #fef1f0;
+    padding-top: 10vh;
+  }
+
+  #galeri h1 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    color: #eee;
+    font-size: 35px;
+    text-align: center;
+    text-transform: none;
+    padding-bottom: 30px;
+  }
+
+  #galeri .album-slider {
+    height: 80%;
+    position: relative;
+  }
+
+  .album-slide {
+    width: 45vh;
+    height: 60vh;
+    position: relative;
+  }
+
+  .album-slide .album-slide-img img {
+    width: 45vh;
+    height: 60vh;
+    border-radius: 2rem;
+    object-fit: cover;
+    border: 0.75vh solid;
+    border-color: #d795a3;
+  }
+
+  .slider-arrow {
+    color: #fefde9;
+  }
+
+  .authorr {
+    height: 75px;
+    background-color: #a3b0c3;
+  }
+
+  .ig {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .spesial {
+    font-size: 5px;
+    text-align: center;
+  }
+}
