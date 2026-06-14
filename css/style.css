@@ -187,7 +187,7 @@ table {
   }
   #hero p1 {
     color: #fff;
-    padding-top: 70vh;
+    padding-top: 60vh;
     text-align: center;
     font-size: 15px;
     font-weight: 300;
@@ -201,7 +201,7 @@ table {
     height: 100vh;
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
-    padding-top: 65%;
+    padding-top: 70%;
   }
 
   #selamat h1 {
@@ -226,7 +226,7 @@ table {
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
     height: 100vh;
-    padding-top: 50vw;
+    padding-top: 60%;
   }
 
   #doa h1 {
@@ -254,7 +254,7 @@ table {
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
     height: 100vh;
-    padding-top: 50%;
+    padding-top: 70%;
   }
 
   #maaf h1 {
@@ -281,7 +281,7 @@ table {
     background-color: #fbc1ce;
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
-    padding-top: 50%;
+    padding-top: 45%;
     height: 100vh;
   }
 
@@ -319,7 +319,7 @@ table {
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
     height: 100vh;
-    padding-top: 50vw;
+    padding-top: 55%;
   }
 
   #ucapan h1 {
@@ -349,7 +349,7 @@ table {
   #galeri {
     height: 100vh;
     background-color: #fef1f0;
-    padding-top: 75px;
+    padding-top: 40%;
   }
 
   #galeri h1 {
