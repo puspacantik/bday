@@ -3,8 +3,6 @@ let tl = gsap.timeline({
   scrollTrigger: {},
 });
 
-tl.from(".jdl-buka", { delay: 0.6, duration: 1, opacity: 0 });
-
 // album Product Slider-start
 var TrandingSlider = new Swiper(".album-slider", {
   effect: "coverflow",
@@ -28,3 +26,25 @@ var TrandingSlider = new Swiper(".album-slider", {
   },
 });
 // album Product Slider-end
+
+// Fungsi untuk muter musik sekali aja pas ada interaksi
+function nyalainMusik() {
+  const audio = document.getElementById("myBgm");
+  audio.volume = 0.4;
+  audio
+    .play()
+    .then(() => {
+      // Jika berhasil diputar, hapus event listener biar gak ke-trigger terus tiap ngeklik
+      document.removeEventListener("click", nyalainMusik);
+      document.removeEventListener("touchstart", nyalainMusik);
+      document.removeEventListener("scroll", nyalainMusik);
+    })
+    .catch((error) => {
+      console.log("Autoplay diblokir browser, nunggu interaksi user...");
+    });
+}
+
+// Dengerin interaksi pertama dari user (klik, sentuh layar, atau scroll)
+document.addEventListener("click", nyalainMusik);
+document.addEventListener("touchstart", nyalainMusik);
+document.addEventListener("scroll", nyalainMusik);
